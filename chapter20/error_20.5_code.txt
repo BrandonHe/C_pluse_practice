@@ -1,0 +1,58 @@
+In file included from 20.5_code.cpp:5:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:457:17: error: no matching function for call to object of type 'const PreIgnoreCase'
+        {return static_cast<const _Compare&>(*this)(__x.__cc.first, __y.__cc.first);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1605:17: note: in instantiation of member function 'std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>::operator()' requested here
+            if (value_comp()(__v, __nd->__value_))
+                ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1915:36: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > > >::__find_equal<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > >' requested here
+    __node_base_pointer& __child = __find_equal(__parent, __nd->__value_);
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1797:32: note: in instantiation of member function 'std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > > >::__node_insert_unique' requested here
+    pair<iterator, bool> __r = __node_insert_unique(__h.get());
+                               ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1038:29: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > > >::__insert_unique<std::__1::pair<const char *, const char *> >' requested here
+            {return __tree_.__insert_unique(std::__1::forward<_Pp>(__p));}
+                            ^
+20.5_code.cpp:41:21: note: in instantiation of function template specialization 'std::__1::map<std::__1::basic_string<char>, std::__1::basic_string<char>, PreIgnoreCase, std::__1::allocator<std::__1::pair<const std::__1::basic_string<char>, std::__1::basic_string<char> > > >::insert<std::__1::pair<const char *, const char *>, void>' requested here
+ dirCaseInsensitive.insert(std::make_pair("John", "2345764"));
+                    ^
+20.5_code.cpp:23:7: note: candidate function not viable: 'this' argument has type 'const PreIgnoreCase', but method is not marked const
+ bool operator () (const std::string& str1, const std::string& str2)
+      ^
+In file included from 20.5_code.cpp:5:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:460:17: error: no matching function for call to object of type 'const PreIgnoreCase'
+        {return static_cast<const _Compare&>(*this)(__x.__cc.first, __y);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:2094:14: note: in instantiation of member function 'std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>::operator()' requested here
+        if (!value_comp()(__root->__value_, __v))
+             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:2020:20: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > > >::__lower_bound<std::__1::basic_string<char> >' requested here
+    iterator __p = __lower_bound(__v, __root(), __end_node());
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1090:56: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > > >::find<std::__1::basic_string<char> >' requested here
+    iterator find(const key_type& __k) {return __tree_.find(__k);}
+                                                       ^
+20.5_code.cpp:62:23: note: in instantiation of member function 'std::__1::map<std::__1::basic_string<char>, std::__1::basic_string<char>, PreIgnoreCase, std::__1::allocator<std::__1::pair<const std::__1::basic_string<char>, std::__1::basic_string<char> > > >::find' requested here
+   dirCaseInsensitive.find(strNameInput);
+                      ^
+20.5_code.cpp:23:7: note: candidate function not viable: 'this' argument has type 'const PreIgnoreCase', but method is not marked const
+ bool operator () (const std::string& str1, const std::string& str2)
+      ^
+In file included from 20.5_code.cpp:5:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:463:17: error: no matching function for call to object of type 'const PreIgnoreCase'
+        {return static_cast<const _Compare&>(*this)(__x, __y.__cc.first);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:2021:26: note: in instantiation of member function 'std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>::operator()' requested here
+    if (__p != end() && !value_comp()(__v, *__p))
+                         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1090:56: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, std::__1::__map_value_compare<std::__1::basic_string<char>, std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> >, PreIgnoreCase, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char>, std::__1::basic_string<char> > > >::find<std::__1::basic_string<char> >' requested here
+    iterator find(const key_type& __k) {return __tree_.find(__k);}
+                                                       ^
+20.5_code.cpp:62:23: note: in instantiation of member function 'std::__1::map<std::__1::basic_string<char>, std::__1::basic_string<char>, PreIgnoreCase, std::__1::allocator<std::__1::pair<const std::__1::basic_string<char>, std::__1::basic_string<char> > > >::find' requested here
+   dirCaseInsensitive.find(strNameInput);
+                      ^
+20.5_code.cpp:23:7: note: candidate function not viable: 'this' argument has type 'const PreIgnoreCase', but method is not marked const
+ bool operator () (const std::string& str1, const std::string& str2)
+      ^
+3 errors generated.

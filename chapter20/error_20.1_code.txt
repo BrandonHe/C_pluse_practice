@@ -1,0 +1,110 @@
+In file included from 20.1_code.cpp:4:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:457:17: error: no matching function for call to object of type 'const ReverseSort<int>'
+        {return static_cast<const _Compare&>(*this)(__x.__cc.first, __y.__cc.first);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1650:28: note: in instantiation of member function 'std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>::operator()' requested here
+    if (__hint == end() || value_comp()(__v, *__hint))  // check before
+                           ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1933:36: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__find_equal<std::__1::__value_type<int, std::__1::basic_string<char> > >' requested here
+    __node_base_pointer& __child = __find_equal(__p, __parent, __nd->__value_);
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1809:20: note: in instantiation of member function 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__node_insert_unique' requested here
+    iterator __r = __node_insert_unique(__p, __h.get());
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1055:29: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__insert_unique<const std::__1::pair<const int, std::__1::basic_string<char> > &>' requested here
+            {return __tree_.__insert_unique(__p.__i_, __v);}
+                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1062:17: note: in instantiation of member function 'std::__1::map<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::insert' requested here
+                insert(__e.__i_, *__f);
+                ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:862:13: note: in instantiation of function template specialization 'std::__1::map<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::insert<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+            insert(__f, __l);
+            ^
+20.1_code.cpp:35:38: note: in instantiation of function template specialization 'std::__1::map<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::map<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+        map<int, string, ReverseSort<int> > mapIntToString4
+                                            ^
+20.1_code.cpp:10:8: note: candidate function not viable: 'this' argument has type 'const ReverseSort<int>', but method is not marked const
+        bool operator() (const KeyType& key1, const KeyType& key2)
+             ^
+In file included from 20.1_code.cpp:4:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:423:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1605:17: error: no matching function for call to object of type 'value_compare' (aka 'std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>')
+            if (value_comp()(__v, __nd->__value_))
+                ^~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1669:16: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__find_equal<std::__1::__value_type<int, std::__1::basic_string<char> > >' requested here
+        return __find_equal(__parent, __v);
+               ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1933:36: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__find_equal<std::__1::__value_type<int, std::__1::basic_string<char> > >' requested here
+    __node_base_pointer& __child = __find_equal(__p, __parent, __nd->__value_);
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1809:20: note: in instantiation of member function 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__node_insert_unique' requested here
+    iterator __r = __node_insert_unique(__p, __h.get());
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1055:29: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__insert_unique<const std::__1::pair<const int, std::__1::basic_string<char> > &>' requested here
+            {return __tree_.__insert_unique(__p.__i_, __v);}
+                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1062:17: note: in instantiation of member function 'std::__1::map<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::insert' requested here
+                insert(__e.__i_, *__f);
+                ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:862:13: note: in instantiation of function template specialization 'std::__1::map<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::insert<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+            insert(__f, __l);
+            ^
+20.1_code.cpp:35:38: note: in instantiation of function template specialization 'std::__1::map<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::map<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+        map<int, string, ReverseSort<int> > mapIntToString4
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:459:10: note: candidate function not viable: no known conversion from 'value_type' (aka 'std::__1::__value_type<int, std::__1::basic_string<char> >') to 'const int' for 2nd argument
+    bool operator()(const _CP& __x, const _Key& __y) const
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:462:10: note: candidate function not viable: no known conversion from 'const std::__1::__value_type<int, std::__1::basic_string<char> >' to 'const int' for 1st argument
+    bool operator()(const _Key& __x, const _CP& __y) const
+         ^
+In file included from 20.1_code.cpp:4:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:423:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1565:29: error: no matching function for call to object of type 'value_compare' (aka 'std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>')
+    if (__hint == end() || !value_comp()(*__hint, __v))  // check before
+                            ^~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1834:36: note: in instantiation of member function 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__find_leaf' requested here
+    __node_base_pointer& __child = __find_leaf(__p, __parent, __h->__value_);
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1799:25: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__insert_multi<const std::__1::pair<const int, std::__1::basic_string<char> > &>' requested here
+                __tree_.__insert_multi(__e.__i_, *__f);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1608:13: note: in instantiation of function template specialization 'std::__1::multimap<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::insert<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+            insert(__f, __l);
+            ^
+20.1_code.cpp:37:43: note: in instantiation of function template specialization 'std::__1::multimap<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::multimap<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+        multimap<int, string, ReverseSort<int> > mmapIntToString4
+                                                 ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:459:10: note: candidate function not viable: no known conversion from 'const value_type' (aka 'const std::__1::__value_type<int, std::__1::basic_string<char> >') to 'const int' for 2nd argument
+    bool operator()(const _CP& __x, const _Key& __y) const
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:462:10: note: candidate function not viable: no known conversion from 'const value_type' (aka 'const std::__1::__value_type<int, std::__1::basic_string<char> >') to 'const int' for 1st argument
+    bool operator()(const _Key& __x, const _CP& __y) const
+         ^
+In file included from 20.1_code.cpp:4:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:423:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1488:17: error: no matching function for call to object of type 'value_compare' (aka 'std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>')
+            if (value_comp()(__nd->__value_, __v))
+                ^~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1587:12: note: in instantiation of member function 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__find_leaf_low' requested here
+    return __find_leaf_low(__parent, __v);
+           ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:1834:36: note: in instantiation of member function 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__find_leaf' requested here
+    __node_base_pointer& __child = __find_leaf(__p, __parent, __h->__value_);
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1799:25: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::basic_string<char> >, ReverseSort<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::basic_string<char> > > >::__insert_multi<const std::__1::pair<const int, std::__1::basic_string<char> > &>' requested here
+                __tree_.__insert_multi(__e.__i_, *__f);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1608:13: note: in instantiation of function template specialization 'std::__1::multimap<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::insert<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+            insert(__f, __l);
+            ^
+20.1_code.cpp:37:43: note: in instantiation of function template specialization 'std::__1::multimap<int, std::__1::basic_string<char>, ReverseSort<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::multimap<std::__1::__map_const_iterator<std::__1::__tree_const_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> > >' requested here
+        multimap<int, string, ReverseSort<int> > mmapIntToString4
+                                                 ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:459:10: note: candidate function not viable: no known conversion from 'const value_type' (aka 'const std::__1::__value_type<int, std::__1::basic_string<char> >') to 'const int' for 2nd argument
+    bool operator()(const _CP& __x, const _Key& __y) const
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:462:10: note: candidate function not viable: no known conversion from 'value_type' (aka 'std::__1::__value_type<int, std::__1::basic_string<char> >') to 'const int' for 1st argument
+    bool operator()(const _Key& __x, const _CP& __y) const
+         ^
+4 errors generated.
